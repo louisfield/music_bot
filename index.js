@@ -23,10 +23,10 @@ client.on("message", async msg => {
     const user = msg.mentions.users.first();
     if(msg.author != client.user) {
       if (user === client.user) {
-          msg.reply("Shut up")
+          msg.send("Shut up")
       } else if (msg.content.toLowerCase().includes("adam") && user != client.user) {
         console.log(client.user)
-        msg.reply("it shut up fuck adam");
+        msg.send("Shut up");
       } 
     }
 	if(!queue[msg.guild.id]) {
